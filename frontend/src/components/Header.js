@@ -1,6 +1,6 @@
 // Header.js
 import React, { useState, useCallback } from 'react';
-
+import './Header.css';
 const Header = () => {
   const [defaultAccount, setDefaultAccount] = useState('null');
   const [connButtonText, setConnButtonText] = useState('Connect Wallet');
@@ -24,19 +24,35 @@ const Header = () => {
       console.error(error);
     }
   });
-
   return (
-    <nav className="navbar navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand logo" href="#">
           <img src="/logo.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-top me-2" />
-          SafeStack
         </a>
-        <button className="btn btn-outline-light" onClick={connectMetaMask}>{connButtonText}</button>
-        <button className="btn btn-outline-light" onClick={disconnect}>disconnect</button>
+        <div className="header-content d-flex">
+          <div className="title-container">
+            <h1 className="navbar-title mx-auto">SafeStack</h1>
+          </div>
+          <div className="buttons-container d-flex">
+          <a className="btn btn-outline-light me-2" href="#about">About</a>
+<a className="btn btn-outline-light me-2" href="#team">Our Team</a>
+<a className="btn btn-outline-light" href="#dcapp">DCApp</a>
+            <button className="btn btn-outline-light me-2" onClick={connectMetaMask}>{connButtonText}</button>
+            <button className="btn btn-outline-light" onClick={disconnect}>disconnect</button>
+          
+          </div>
+        </div>
       </div>
     </nav>
   );
 };
 
 export default Header;
+  
+
+
+
+
+
+

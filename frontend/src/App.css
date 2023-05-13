@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex-grow: 1;
+}
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 80px; /* Réserve de l'espace pour le footer */
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.content-wrap {
+  padding-top: 80px; /* Réserve de l'espace pour le header */
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.content-wrap {
+  padding-top: 80px; /* Réserve de l'espace pour le header */
+}
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+.introParagraph {
+  margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.page-section {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+.custom-border {
+  border: 45px solid #2e2e2e; /* Changez l'épaisseur et la couleur de la bordure */
+  border-radius: 1rem; /* Ajoutez des coins arrondis */
+  padding: 1 rem; /* Ajoutez un peu d'espace entre le contenu et la bordure */
+}

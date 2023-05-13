@@ -1,0 +1,31 @@
+/* Header.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .title-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-title {
+    margin: 0;
+    color: #fff; /* Ajoutez cette ligne pour définir la couleur du texte en blanc */
+  }

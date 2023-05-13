@@ -1,0 +1,46 @@
+.content {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2em;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .teamMember {
+    text-align: center;
+  }
+  
+  .memberPhoto {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .memberName {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .memberDescription {
+    font-size: 1em;
+    margin-top: 0;
+    color: #555;
+  }
+  /* DCAApp.css */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
