@@ -1,29 +1,12 @@
 // Header.js
 import React, { useState, useCallback } from 'react';
 import './Header.css';
+import { useAccount } from 'wagmi'
+
+import { Account } from './Account'
+import { Connect } from './Connect'
 const Header = () => {
-  const [defaultAccount, setDefaultAccount] = useState('null');
-  const [connButtonText, setConnButtonText] = useState('Connect Wallet');
-
-  const connectMetaMask = useCallback(async () => {
-    try {
-      window.ethereum.request({ method: 'eth_requestAccounts' }).then(result => {
-        setDefaultAccount(result[0]);
-      });
-      setConnButtonText('Wallet Connected');
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-
-  const disconnect = useCallback(async () => {
-    try {
-      setDefaultAccount(null);
-      setConnButtonText('Connect Wallet');
-    } catch (error) {
-      console.error(error);
-    }
-  });
+ 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -38,9 +21,19 @@ const Header = () => {
           <a className="btn btn-outline-light me-2" href="#about">About</a>
 <a className="btn btn-outline-light me-2" href="#team">Our Team</a>
 <a className="btn btn-outline-light" href="#dcapp">DCApp</a>
-            <button className="btn btn-outline-light me-2" onClick={connectMetaMask}>{connButtonText}</button>
-            <button className="btn btn-outline-light" onClick={disconnect}>disconnect</button>
+<>
+      <h1>wagmi + ERC20 + Vite</h1>
+
+      <Connect />
+
+      {isConnected && (
+        <>
+          <Account />
           
+        </>
+      )}
+    </>
+  
           </div>
         </div>
       </div>

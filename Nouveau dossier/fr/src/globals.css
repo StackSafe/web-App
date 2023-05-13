@@ -29,14 +29,3 @@ body {
   font-size: 2.5rem; /* Ajustez cette valeur pour modifier la taille des titres */
   margin-bottom: 1rem;
 }
-body {
-  font-family: 'Arial', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-.bulletPoints {
-  padding-inline-start: 0;
-  list-style-position: inside;
-}

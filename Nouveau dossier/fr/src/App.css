@@ -129,7 +129,7 @@
   padding: 2rem 0;
 }
 .custom-border {
-  border: 90px solid #2e2e2e; /* Changez l'épaisseur et la couleur de la bordure */
-  border-radius: 0 rem; /* Ajoutez des coins arrondis */
+  border: 45px solid #2e2e2e; /* Changez l'épaisseur et la couleur de la bordure */
+  border-radius: 1rem; /* Ajoutez des coins arrondis */
   padding: 1 rem; /* Ajoutez un peu d'espace entre le contenu et la bordure */
 }

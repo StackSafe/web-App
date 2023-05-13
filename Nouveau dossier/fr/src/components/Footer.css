@@ -1,0 +1,10 @@
+/* Footer.css */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem;
+  }
