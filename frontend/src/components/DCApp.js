@@ -1,46 +1,16 @@
 // DCAApp.js
-import React, {useState , useCallback } from 'react';
+import React,{ useState, useEffect } from 'react';
+import { ethers } from "ethers";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './DCApp.css';
 
-const DCApp = () => {
-  const [defaultAccount, setDefaultAccount ]=useState('null');
-  const [connButtonText, setConnButtonText] = useState('Connect Wallet');
-  const connectMetaMask = useCallback(async () => {
-    try {
-      //const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-      //const account = accounts[0];
-      window.ethereum.request({method: 'eth_requestAccounts'}).then(result => {
-        setDefaultAccount(result[0]);
-});
-      //console.log(account);
-      setConnButtonText('Wallet Connected');
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-  const disconnect = useCallback(async () => {
-   // try {accounts[0]=''
-    //setConnButtonText('Connect Wallet') 
-    try {
-      setDefaultAccount(null);
-    setConnButtonText('Connect Wallet')}catch(error){console.error(error)}
 
-  })
+const DCApp = () => {
+  
+  
   return (
     <div>
-      <header>
-        <nav className="navbar navbar-dark bg-dark">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              <img src="/logo.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-top me-2" />
-              SafeStack
-            </a>
-            <button className="btn btn-outline-light" onClick={connectMetaMask}>{connButtonText}</button>
-            <button className="btn btn-outline-light" onClick={disconnect}>disconnect</button>
-          </div>
-        </nav>
-      </header>
+      
       <main className="container mt-5">
         <button className="btn btn-primary">Ajouter des fonds</button>
         <div className="mt-4">

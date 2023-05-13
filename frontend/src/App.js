@@ -1,11 +1,14 @@
 import React from 'react';
 import DCApp from './components/DCApp';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <DCApp />
+     <Header/>
+     <DCApp/>
+      
       <Footer />
     </div>
   );
