@@ -19,7 +19,7 @@ function App() {
             <h2 className="component-title">About</h2>
             <About />
           </section>
-          <section id="our-team">
+          <section id="team">
             <h2 className="component-title">Our Team</h2>
             <OurTeam />
           </section>

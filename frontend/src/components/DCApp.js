@@ -16,7 +16,7 @@ const DCApp = () => {
           <h3>Buy cryptocurrencies</h3>
           <form>
             <div className="mb-3">
-              <label htmlFor="total-amount" className="form-label">Total amount (in USD)</label>
+              <label htmlFor="total-amount" className="form-label">Total amount (in ETH)</label>
               <input type="number" className="form-control" id="total-amount" placeholder="100" />
             </div>
             <div className="mb-3">
@@ -27,7 +27,7 @@ const DCApp = () => {
               <label htmlFor="frequency" className="form-label">frequency</label>
               <input type="number" className="form-control" id="frequency" placeholder="1" />
             </div>
-            <button type="submit" className="btn btn-primary">Buy ETH</button>
+            <button type="submit" className="btn btn-primary">Buy crypto</button>
           </form>
         </div>
       </main>
