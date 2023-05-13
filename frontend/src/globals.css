@@ -40,3 +40,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-inline-start: 0;
   list-style-position: inside;
 }
+.horizontal-bar {
+  height: 90px; /* Épaisseur de la barre (modifiable) */
+  background-color: #363535; /* Couleur de la barre (modifiable) */
+}
+.section-with-border {
+  border: 100px solid rgb(51, 49, 49);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+

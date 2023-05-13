@@ -11,13 +11,16 @@ const About = () => {
           <p className={styles.aboutText}>
             Dollar cost averaging (DCA) is an investment strategy that involves investing a fixed amount of money at regular intervals regardless of the asset's price. By doing so, investors can reduce the impact of market volatility and potentially achieve better long-term results.
           </p>
+
           <p className={styles.aboutText}>
+
             DCA is commonly used with stocks, mutual funds, and cryptocurrencies, where investors contribute a fixed amount on a monthly or quarterly basis. This approach allows investors to buy more shares when prices are low and fewer shares when prices are high, effectively averaging out the cost over time.
           </p>
           <h2>Automating Dollar Cost Averaging</h2>
           <p className={styles.aboutText}>
             Automating the dollar cost averaging process can provide convenience and discipline to investors. By setting up automated contributions, investors can ensure consistent investments without the need for manual intervention. This can help eliminate emotional decision-making and timing the market, which are often detrimental to investment returns.
           </p>
+
           <p className={styles.aboutText}>
             There are various platforms and tools available that allow investors to automate dollar cost averaging. These platforms usually provide features such as scheduled recurring investments, portfolio rebalancing, and performance tracking. By leveraging automation, investors can focus on long-term goals and let the system handle the repetitive investment tasks.
           </p>

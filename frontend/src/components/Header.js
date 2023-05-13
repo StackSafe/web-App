@@ -27,8 +27,8 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand logo" href="#">
-          <img src="/log.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-top me-2" />
+        <a className="{styles.logo}" href="#">
+          <img src="/log.png" alt="Logo" width="70" height="70" className="d-inline-block align-text-top me-2" />
         </a>
         <div className="header-content d-flex">
           <div className="title-container">

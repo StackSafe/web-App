@@ -14,16 +14,16 @@ function App() {
         <Header />
       </div>
       <div className="main-content">
-      <div className="content-wrap custom-border">
-          <section id="about">
+        <div className="content-wrap">
+          <section id="about" className="section-with-border">
             <h2 className="component-title">About</h2>
             <About />
           </section>
-          <section id="teamy">
+          <section id="teamy" className="section-with-border">
             <h2 className="component-title">Our Team</h2>
             <OurTeam />
           </section>
-          <section id="dcapp">
+          <section id="dcapp" className="section-with-border">
             <h2 className="component-title">Dollar Cost Averaging App</h2>
             <DCApp />
           </section>
@@ -35,6 +35,3 @@ function App() {
 }
 
 export default App;
-
-
-
