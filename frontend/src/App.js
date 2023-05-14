@@ -5,7 +5,7 @@ import Header from './components/Header';
 import About from './pages/About';
 import OurTeam from './pages/Team';
 import styles from './App.css'; // Importer le fichier CSS
-
+import Roadmap from './components/User'
 function App() {
   return (
     <div className="App">
@@ -26,8 +26,13 @@ function App() {
            
             <OurTeam />
           </section>
+          <section className={`roadmap-container`}>
+            <Roadmap />
+          </section>
+          
           
         </div>
+        
       </div>
       <Footer />
     </div>

@@ -79,3 +79,10 @@
   border-radius: inherit;
   background: linear-gradient(to right, #161616, #1b0bc4); /* Remplacez les couleurs par celles de votre choix */
 }
+.roadmap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ajouter la largeur souhaitée ici */
+  min-height: 100vh; /* Ajuster la hauteur en fonction de vos besoins */
+}

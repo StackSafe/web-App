@@ -38,8 +38,7 @@ const Header = () => {
           </div>
           <div className="buttons-container d-flex">
           <a className="btn btn-outline-light me-2" href="#dcapp">DCApp</a>
-            <a className="btn btn-outline-light me-2" href="#about">Abou
-            t</a>
+            <a className="btn btn-outline-light me-2" href="#about">About</a>
             <a className="btn btn-outline-light me-2" href="#team">Our Team</a>
             
             <button className="btn btn-outline-light me-2" onClick={connectMetaMask}>{connButtonText}</button>
