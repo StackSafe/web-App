@@ -83,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ajouter la largeur souhaitée ici */
-  min-height: 100vh; /* Ajuster la hauteur en fonction de vos besoins */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #8f8e8e; /* Ajouter un fond noir */
 }
