@@ -80,7 +80,7 @@
         console.log(safeAddress);
 
         console.log('Safe Deployed:')
-        console.log(`https://goerli.etherscan.io/address/${safeAddress}`)
+        console.log(`https://gnosis.api.io/address/${safeAddress}`)
         console.log(`https://app.safe.global/gor:${safeAddress}`)
       } catch(error) {
         console.log(error);
