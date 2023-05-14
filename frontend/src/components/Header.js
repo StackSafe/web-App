@@ -1,6 +1,6 @@
 // Header.js
 import React, { useState, useCallback } from 'react';
-import './Header.css';
+import styles from './Header.css';
 const Header = () => {
   const [defaultAccount, setDefaultAccount] = useState('null');
   const [connButtonText, setConnButtonText] = useState('Connect Wallet');
@@ -25,10 +25,10 @@ const Header = () => {
     }
   });
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container">
         <a className="{styles.logo}" href="#">
-          <img src="/log.png" alt="Logo" width="70" height="70" className="d-inline-block align-text-top me-2" />
+          <img src="/logo1.png" alt="Logo" width="90" height="90" className="d-inline-block align-text-top me-2" />
         </a>
         <div className="header-content d-flex">
           <div className="title-container">

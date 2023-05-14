@@ -27,6 +27,55 @@
 }
 
 .custom-border {
-  border-top: 1px solid black; /* Ajoutez une bordure supérieure de couleur noire */
+  border-top: 15px solid black; /* Ajoutez une bordure supérieure de couleur noire */
   padding-top: 2rem; /* Ajoutez un espace au-dessus du contenu pour séparer la bordure */
+}
+.component-title {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Styles for the arrow */
+.component-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 40px;
+  border-style: solid;
+  border-color: transparent transparent #f8f8f8 transparent;
+}
+
+/* Adjustments for the arrow position */
+.component-title::after {
+  margin-left: -10px;
+  margin-bottom: -1px;
+}
+
+
+
+.section-with-border {
+  position: relative;
+  padding: 20px;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 17px;
+  background: linear-gradient(to right, #8f8e8e, #fcb4b4); /* Remplacez les couleurs par celles de votre choix */
+}
+
+.section-with-border::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(to right, #4e4848, #090814); /* Remplacez les couleurs par celles de votre choix */
 }

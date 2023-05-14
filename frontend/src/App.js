@@ -4,8 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
 import OurTeam from './pages/Team';
-import './App.css';
-import './globals.css';
+import styles from './App.css'; // Importer le fichier CSS
 
 function App() {
   return (
@@ -15,18 +14,19 @@ function App() {
       </div>
       <div className="main-content">
         <div className="content-wrap">
-          <section id="about" className="section-with-border">
-            <h2 className="component-title">About</h2>
-            <About />
-          </section>
-          <section id="teamy" className="section-with-border">
-            <h2 className="component-title">Our Team</h2>
-            <OurTeam />
-          </section>
-          <section id="dcapp" className="section-with-border">
-            <h2 className="component-title">Dollar Cost Averaging App</h2>
+        <section id="dcapp" className={`section-with-border ${styles.bubble}`}>
+            
             <DCApp />
           </section>
+          <section id="about" className={`section-with-border ${styles.bubble}`}>
+           
+            <About />
+          </section>
+          <section id="teamy" className={`section-with-border ${styles.bubble}`}>
+           
+            <OurTeam />
+          </section>
+          
         </div>
       </div>
       <Footer />

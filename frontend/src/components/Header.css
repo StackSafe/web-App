@@ -4,7 +4,13 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
   .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -33,11 +39,57 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
+    background-color: #000000;
     color: white;
     padding: 1em;
   }
   
   .logo {
     margin-left: 1em;
+  }
+  .header {
+    top : 0;
+    position : relative;
+  
+  }
+  .navbar.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .component-title {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #000000;
+  }
+  
+  /* Styles for the arrow */
+  .component-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #2b1b1b transparent;
+  }
+  
+  /* Adjustments for the arrow position */
+  .component-title::after {
+    margin-left: -10px;
+    margin-bottom: -1px;
+  }
+  .header {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000; /* Noir profond */
+    color: #ffffff;
   }

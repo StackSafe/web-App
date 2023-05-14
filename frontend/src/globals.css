@@ -47,6 +47,11 @@ h1, h2, h3, h4, h5, h6 {
 .section-with-border {
   border: 100px solid rgb(51, 49, 49);
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
+}
+.rounded-rectangle {
+  border: 1px solid black;
+  border-radius: 10px; /* Ajustez la valeur pour obtenir l'arrondi souhaité */
+  padding: 10px; /* Ajustez le padding selon vos besoins */
 }
 
