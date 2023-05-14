@@ -1,3 +1,10 @@
+
+This is the module to transfer money between adresses whether there are a Safe address or a classic wallet adresses.
+All the import here are basic imports, i did not publish all the libraries on the github, because it is not useful.
+
+
+
+
 // SPDX-License-Identifier: LGPL-3.0-only
 
 /// @title Module Interface - A contract that can pass messages to a Module Manager contract if enabled by that contract.
@@ -99,13 +106,11 @@ contract Guardable is Ownable {
 
 
 
-
-import "./ISwapRequester.sol";
+import "./Module.sol"
 
 //start
 
-abstract contract SafestackModule is ISwapRequester {
-    address public target;
+abstract contract SafestackModule is Module {
     SwapRequest[] public swapRequests;
 
     function execute ( address to,
