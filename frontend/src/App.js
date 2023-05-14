@@ -22,7 +22,7 @@ function App() {
            
             <About />
           </section>
-          <section id="teamy" className={`section-with-border ${styles.bubble}`}>
+          <section id="team" className={`section-with-border ${styles.bubble}`}>
            
             <OurTeam />
           </section>
