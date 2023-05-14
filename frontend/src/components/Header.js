@@ -37,9 +37,11 @@ const Header = () => {
             <h1 className="navbar-title mx-auto">SafeStack</h1>
           </div>
           <div className="buttons-container d-flex">
-            <a className="btn btn-outline-light me-2" href="#about">About</a>
+          <a className="btn btn-outline-light me-2" href="#dcapp">DCApp</a>
+            <a className="btn btn-outline-light me-2" href="#about">Abou
+            t</a>
             <a className="btn btn-outline-light me-2" href="#team">Our Team</a>
-            <a className="btn btn-outline-light me-2" href="#dcapp">DCApp</a>
+            
             <button className="btn btn-outline-light me-2" onClick={connectMetaMask}>{connButtonText}</button>
             <button className="btn btn-outline-light" onClick={disconnect}>Disconnect</button>
           </div>
