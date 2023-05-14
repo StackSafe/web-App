@@ -1,6 +1,6 @@
 
 This is the module to transfer money between adresses whether there are a Safe address or a classic wallet adresses.
-All the import here are basic imports, i did not publish all the libraries on the github, because it is not useful.
+All the import here are basic imports, i did not publish all the libraries on the github, because it is not useful, it does not work.
 
 
 
