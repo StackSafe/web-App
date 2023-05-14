@@ -6,8 +6,8 @@
   //Protocole Kit Provider : Enable management of Safe Account and Wallet
   export const ProtocolKit = () => {
 
-    const RPC_URL='https://eth-goerli.public.blastapi.io'
-    const txServiceUrl = 'https://safe-transaction-goerli.safe.global'
+    const RPC_URL='https://gnosis.api.onfinality.io/public'
+    const txServiceUrl = 'https://gnosis.api.onfinality.io/public'
 
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
