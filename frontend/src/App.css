@@ -35,7 +35,7 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  background-color: #f8f8f8;
+  background-color: #0a0909;
   color: #333;
 }
 
@@ -64,7 +64,7 @@
   padding: 20px;
   border-width: 8px;
   border-style: solid;
-  border-radius: 17px;
+  border-radius: 0px;
   background: linear-gradient(to right, #8f8e8e, #fcb4b4); /* Remplacez les couleurs par celles de votre choix */
 }
 
@@ -77,5 +77,5 @@
   bottom: -8px;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(to right, #4e4848, #090814); /* Remplacez les couleurs par celles de votre choix */
+  background: linear-gradient(to right, #161616, #1b0bc4); /* Remplacez les couleurs par celles de votre choix */
 }
