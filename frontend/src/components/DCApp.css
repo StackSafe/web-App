@@ -6,4 +6,38 @@ body {
   button {
     cursor: pointer;
   }
+  .dcAppContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ethLogo {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primaryButton {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .secondaryButton {
+    background-color: transparent;
+    color: #6c63ff;
+    border: 1px solid #6c63ff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
   
