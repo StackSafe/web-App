@@ -98,7 +98,7 @@
         }
 
         const tx = await signer.sendTransaction(transactionParameters);
-        console.log(`Deposit Transaction: https://goerli.etherscan.io/tx/${tx.hash}`)
+        console.log(`Deposit Transaction: https://gnosis.api.io/tx/${tx.hash}`)
       } catch(error) {
         console.log(error);
       }
@@ -138,7 +138,7 @@
         const receipt = await executeTxResponse.transactionResponse?.wait()
 
         console.log('Transaction executed:')
-        console.log(`https://goerli.etherscan.io/tx/${receipt.transactionHash}`)
+        console.log(`https://gnosis.api.io/tx/${receipt.transactionHash}`)
       } catch(error) {
         console.log(error);
       }
